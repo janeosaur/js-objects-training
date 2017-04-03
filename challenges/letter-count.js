@@ -31,3 +31,24 @@
 */
 
 // YOUR CODE HERE
+
+function letterCount(phrase) {
+  var objResult = {};
+  var lowerCase = phrase.toLowerCase(); // to make them lowercase
+
+// loop through phrase
+// if letter matches key in objectResult, add 1 to the value of that key
+// else key is't in objectResult then add that letter as a key, and set value to 1
+
+  for (i = 0; i<lowerCase.length; i++) {
+      if (objResult[lowerCase[i]] > 0) {
+        objResult[lowerCase[i]] += 1;
+      } else {
+        objResult[lowerCase[i]] = 1;
+      }
+  }
+  console.log(objResult);
+}
+
+letterCount('apple');
+letterCount('twitter');
