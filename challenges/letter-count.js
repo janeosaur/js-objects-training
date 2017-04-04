@@ -52,3 +52,24 @@ function letterCount(phrase) {
 
 letterCount('apple');
 letterCount('twitter');
+
+
+// to calculate frequency
+
+function letterFreq(phrase) {
+  var freqResult = {};
+  var lowerCase = phrase.toLowerCase(); // to make them lowercase
+
+  for (i = 0; i<lowerCase.length; i++) {
+      var total = phrase.length;
+      if (freqResult[lowerCase[i]] > 0) {
+        freqResult[lowerCase[i]] += 1/total;
+      } else {
+        freqResult[lowerCase[i]] = 1/total;
+      }
+    }
+  console.log(freqResult);
+}
+
+letterFreq('apple');
+letterFreq('twitter');
