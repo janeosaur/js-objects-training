@@ -45,3 +45,37 @@
 */
 
 // YOUR CODE HERE
+
+function parseQueryString(queryString) {
+  var newObject = {};
+  queries = queryString.split("=");
+  queries = queryString.split("&");
+
+  for (i=0; i< queries.length; i++) {
+    temp = queries[i].split("=");
+    newObject[temp[0]] = temp[1];
+    if (queries.length === 1) {
+      temp = queries[i].split("=");
+      newObject[temp[0]];
+    }
+  }
+  console.log(newObject);
+  return(newObject);
+}
+
+parseQueryString(""); // this returns as {}: undefined - don't know how to remove the undefined
+parseQueryString("a=1");
+parseQueryString("first=alpha&last=omega");
+parseQueryString("a=apple&b=beet&b=blueberry&c=&d=10");
+
+// reverse - couldn't get to work
+//
+// function stringReverse(objectString) {
+//   var newString = "";
+//   joinString = objectString.join(",");
+//   console.log(joinString);
+// }
+//
+//
+// var o = {first: "alpha", last: "omega"};
+// stringReverse(o);
