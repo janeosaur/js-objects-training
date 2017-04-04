@@ -68,14 +68,19 @@ parseQueryString("a=1");
 parseQueryString("first=alpha&last=omega");
 parseQueryString("a=apple&b=beet&b=blueberry&c=&d=10");
 
-// reverse - couldn't get to work
-//
-// function stringReverse(objectString) {
-//   var newString = "";
-//   joinString = objectString.join(",");
-//   console.log(joinString);
-// }
-//
-//
-// var o = {first: "alpha", last: "omega"};
-// stringReverse(o);
+// reverse
+
+function stringReverse(object) {
+  var newString = "";
+  var keys = Object.keys(object); //
+  var pairArr = []; //
+  keys.forEach(function(el) { //
+    pairArr.push(el + '=' + object[el]);
+  });
+  joinString = pairArr.join("&");
+  console.log(joinString);
+}
+
+
+var o = {first: "alpha", last: "omega"};
+stringReverse(o);

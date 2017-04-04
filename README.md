@@ -1,5 +1,10 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Javascript Objects - Problem Set
 
+Training Reflection
+- letter counter: I was able to code out the letter count function in class. It was interesting to see diff ways to accomplish the same task (vs. Michael's).
+- query string: After googling, I was able the finish the basic requirement. (except that undefined would be a value for the empty string argument when turned into an object)
+
+
 * Please **Fork & Clone** this repo.
 * For each problem, modify the relevant file in the `challenges`folder. We encourage you to *commit often* and push your changes to github.
 * In your forked copy of this readme, add a short (3-5 sentence) reflection about your work to the top in a section titled "Training Reflection".
